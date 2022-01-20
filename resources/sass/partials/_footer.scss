@@ -1,0 +1,110 @@
+//Footer Top
+.footer-top {
+  color: white;
+  background-image: url("/img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  section.footer-logo {
+    padding: 40px 0;
+    background: url("/img/dc-logo-bg.png") no-repeat;
+    background-position: right center;
+    
+    ul.footer-dc-comics-shop {
+      display: inline-block;
+    }
+    ul.footer-shop {
+      padding-top: 15px;
+    }
+    ul.footer-dc {
+      padding-left: 40px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    ul.footer-sites {
+      padding-left: 40px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    
+    li h4 {
+      font-size: 16px;
+      color: white;
+      padding-bottom: 10px;
+      font-weight: 700;
+    }
+    li a {
+      color: #959595;
+      font-size: 12px;
+      padding-bottom: 5px;
+    }
+
+    h5 {
+      padding-top: 10px;
+      font-size: 12px;
+      color: #959595; 
+
+      a {
+        color: $color-primary
+      }
+    }
+  }
+};
+
+
+
+
+
+
+//Footer Bottom
+.footer-bottom {
+  background-color: #303030;
+
+  .padding {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    a.button {
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: white;
+      padding: 12px;
+      border: 2px solid $color-primary;
+      transition: 0.8s;
+
+      &:hover {
+        background-color: $color-primary;
+      }
+    };
+
+    .follow {
+      display: flex;
+      align-items: center;
+
+      h3 {
+        font-size: 16px;
+        font-weight: 700;
+        color: $color-primary;
+        display: inline-block;
+        padding-right: 10px;
+        vertical-align: super;
+      };
+
+      ul {
+        display: inline-block;
+        li {
+          display: inline-block;
+          padding: 0 8px;
+          a {
+            img {
+              width: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
