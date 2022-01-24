@@ -1,0 +1,142 @@
+.main {
+  // Box Blue
+  .box-blue {
+    background-color: $color-primary;
+    height: 80px;
+
+    div.container {
+      position: relative;
+      .img-comic {
+        position: absolute;
+        top: -235px;
+        left: 0;
+        border: 1px solid white;
+        color: white;
+
+        h5._type {
+          position: absolute;
+          top: 0;
+          left: 0;
+          text-transform: uppercase;
+          padding: 3px 7px;
+          background-color: $color-secondary;
+        }
+        ._view-gallery {
+          position: absolute;
+          bottom: 0;
+          background-color: $color-secondary;
+          padding: 3px 0;
+          text-align: center;
+
+          h5 {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  // Box Comics
+  .box-comic {
+    padding: 80px 0;
+
+    // Price Comics
+    .col-8 {
+      h2 {
+        color: $color-navy;
+        padding-bottom: 20px;
+      }
+      ._box-price {
+        background-color: $color-green;
+        border-bottom: 1px solid #387e3c;
+        display: flex;
+        justify-content: space-between;
+        color: #86f29c;
+
+        div h4 {
+          padding: 15px 0;
+        }
+        div {
+          &:nth-child(1) {
+            padding: 0 20px;
+            h4 {
+              display: inline-block;
+            }
+          }
+          &:nth-child(2) {
+            border-left: 1px solid #387e3c;
+            text-align: center;
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+      p {
+        padding-top: 20px;
+      }
+    }
+
+    // Adv
+    .col-4 {
+      ._img-adv {
+        width: 100%;
+        padding: 10px 0 0 20px;
+      }
+    }
+  }
+
+  // Info Comics
+  ._box-info {
+    background-color: #f6f6f6;
+    border-top: 1px solid $color-grey-border;
+
+    .container .row {
+      padding-bottom: 100px;
+
+      a {
+        color: $color-secondary;
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+      
+      h3 {
+        color: $color-navy;
+        padding-bottom: 25px;
+        border-bottom: 1px solid $color-grey-border;
+      }
+      
+      ._info-subtitle {
+        border-bottom: 1px solid $color-grey-border;
+        padding: 8px 0;
+        h5 {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  ._box-info-icon {
+    background-color: #f6f6f6;
+    border-top: 1px solid $color-grey-border;
+    
+    .container {
+      border-left: 1px solid $color-grey-border;
+
+      .row .col-3 {
+        position: relative;
+        padding: 15px;
+        border-right: 1px solid $color-grey-border;
+
+        h5 {
+          color: $color-grey;
+          font-weight: 700;
+        }
+
+      }
+    }
+  }
+
+
+}

@@ -30,44 +30,48 @@ $banner_blue = [
 
 @section("content")
 {{-- Comics --}}
-<section>
-  <div class="container">
+<section class="section-card">
+  <div class="container position-relative">
+    <a href="#" class="_btn-large _btn-blue">CURRENT SERIES</a>
+
+    {{-- Card --}}
     <div class="product-card-container">
-      {{-- Card --}}
       @foreach($dati_comics as $key => $value)
-      <a class="product-card" href="#">
+      <a href="{{route('comics.details',['id' => $loop ->index])}}" class="product-card">
         <div class="product-card-img">
           <img src="{{ $value['thumb'] }}" alt="{{ $value['title'] }}">
         </div>
-        <h4>{{ $value['series'] }}</h4>
+        <h4 class="_title-comics">{{ $value['series'] }}</h4>
       </a>
       @endforeach
     </div>
-    
-    <div class="btn-small">
-      <a href="#">LOAD MORE</a>
+
+    <div class="text-center">
+      <a href="#" class="_btn-small _btn-blue">LOAD MORE</a>
     </div>
   </div>
-  </section>
-  
+</section>
+
 
 {{-- Banner blue --}}
-<div class="banner-blue">
+<section class="banner-blue">
   <div class="container">
-    
+
     <div class="row">
 
       @foreach($banner_blue as $value)
       <div class="col-5-footer">
         <img src="{{ $value['img'] }}" alt="{{ $value['text'] }}">
-        
-        <a href="#"><h3>{{ $value['text'] }}</h3></a>
+
+        <a href="#">
+          <h5>{{ $value['text'] }}</h5>
+        </a>
       </div>
       @endforeach
 
     </div>
 
   </div>
-</div>
+</section>
 
 @endsection

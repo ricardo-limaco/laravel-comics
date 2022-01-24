@@ -1,42 +1,14 @@
 .main {
-
-  // Banner blue //
-  .banner-blue{
-    background-color: $color-primary;
-  
-    .row {
-      display: flex;
-  
-      .col-5-footer {
-        width: calc(100% / 5);
-        text-align: center;
-        padding: 50px 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        img {
-          max-height: 55px;
-          max-width: 55px;
-          display: inline-block;
-        }
-        h3 {
-          font-size: 13px;
-          color: white;
-          text-transform: uppercase;
-          display: inline-block;
-          padding-left: 13px;
-          font-weight: 400;
-        }
-      }
-    }
-  }
-
-
   // Section Card
-  section {
+  .section-card {
     background-color: #1c1c1c;
     padding-bottom: 20px;
+
+    ._btn-large {
+      position: absolute;
+      top: -33px;
+      left: 12px;
+    }
 
     .product-card-container {
       display: flex;
@@ -57,9 +29,9 @@
           }
         }
 
-        h4 {
+        h4._title-comics {
           font-size: 14px;
-          font-weight: 500;
+          font-weight: 400;
           padding-top: 13px;
           padding-bottom: 35px;
           color: white;
@@ -67,18 +39,31 @@
         }
       }
     }
+  }
 
-    .btn-small {
-      text-align: center;
-      a {
-        color: white;
-        font-weight: 700;
-        font-size: 12px;
-        padding: 10px 45px;
-        background-color: $color-primary;
+  // Banner blue //
+  .banner-blue {
+    background-color: $color-primary;
+
+    .row {
+      .col-5-footer {
+        width: calc(100% / 5);
+        text-align: center;
+        padding: 50px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          max-height: 55px;
+          max-width: 55px;
+        }
+        h5 {
+          color: white;
+          text-transform: uppercase;
+          padding-left: 13px;
+        }
       }
     }
   }
-
-
 }

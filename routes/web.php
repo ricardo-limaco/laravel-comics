@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-
+// Comics
 Route::get("/comics", function () {
   $dati_comics = config("comics");
 
@@ -23,6 +23,20 @@ Route::get("/comics", function () {
   ]);
 })->name("comics.index");
 
+
+// Details
+Route::get('/comics/{id?}', function ($id) {
+  $dati_comics = config('comics');
+
+  if ($id >= 0 && $id < count($dati_comics)) {
+    $comic = $dati_comics[$id];
+
+    return view('comics.details', ['comic' => $comic]);
+
+  } else {
+    abort('404');
+  }
+})->name('comics.details');
 
 
 

@@ -1,16 +1,20 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-a{
+a {
+  color: $color-primary;
   text-decoration: none;
   display: inline-block;
   margin: 0;
   padding: 0;
+  &:hover {
+    color: white;
+  }
 }
 
-ul{
+ul {
   margin: 0;
   padding: 0;
 }
@@ -19,8 +23,72 @@ li {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   margin: 0;
-  font-size: 11px;
 }
 
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+h5 {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+
+//////////// Btn ////////////
+._btn-blue {
+  background-color: $color-primary;
+  transition: 0.8s;
+  &:hover {
+    background-color: #0062be;
+  }
+}
+
+._btn-small {
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 50px;
+}
+
+._btn-large {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 13px 23px;
+}
+
+._btn-border {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  padding: 12px;
+  border: 2px solid $color-primary;
+  transition: 0.8s;
+
+  &:hover {
+    background-color: $color-primary;
+  }
+}
